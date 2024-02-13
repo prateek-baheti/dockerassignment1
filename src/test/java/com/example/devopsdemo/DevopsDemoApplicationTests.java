@@ -18,8 +18,8 @@ public class DevopsDemoApplicationTests {
 
 	@Test
 	void testArEndpoint() throws Exception {
-		mockMvc.perform(MockMvcRequestBuilders.get("/start"))
+		mockMvc.perform(MockMvcRequestBuilders.get("/learningdocker"))
 				.andExpect(MockMvcResultMatchers.status().isOk())
-				.andExpect(MockMvcResultMatchers.content().string("Started the application"));
+				.andExpect(MockMvcResultMatchers.content().string("Started the docker application"));
 	}
 }
